@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cairn 叠石 Privacy Policy</title>
+<style>
+  :root { --bg: #fbfaf7; --fg: #22251f; --muted: #6a6f63; --line: #e2e0d8; --accent: #3d7a4f; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #181a17; --fg: #e7e8e2; --muted: #9da293; --line: #33362f; --accent: #7fbf8f; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  p.meta { color: var(--muted); margin: 0 0 24px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+  a { color: var(--accent); }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Cairn 叠石 Privacy Policy</h1>
+<p class="meta">Last updated: 2026-11-04 · <a href="#zh">中文版</a></p>
+
+<p>Cairn is a browser extension that shows web pages as a vertical feed. It has no account system and no server that receives your data. Everything it learns about you stays in your browser.</p>
+
+<h2>What stays on your device</h2>
+<ul>
+  <li><b>Bookmarks.</b> Cairn reads your browser bookmarks to show them in the feed. They are never uploaded.</li>
+  <li><b>Your reactions.</b> Likes, "not interested", time spent and scroll depth on each page, reading positions, and the taste profile built from them are stored in <code>chrome.storage</code> on your device and used only to rank the feed locally.</li>
+  <li><b>Addresses you add.</b> URLs you paste into Cairn are stored locally.</li>
+</ul>
+<p>Uninstalling the extension deletes all of this.</p>
+
+<h2>What Cairn downloads</h2>
+<ul>
+  <li><b>The public content index</b> at <code>jccjd.github.io/webflow-index</code>: static files listing article titles, links and excerpts. Every user downloads the same files; no personal information or preferences are sent, and no cookies are used. GitHub Pages, like any web host, can see your IP address in its access logs (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>).</li>
+  <li><b>Public sources</b> such as blog feeds, Hacker News search and Wikipedia, fetched directly from those sites without cookies, to find new articles. Pages in your bookmarks may be fetched the same way to check whether they are articles. Private and work addresses (local network, intranet, document and admin systems) are skipped.</li>
+  <li><b>The pages you view.</b> Each page in the feed is loaded from its own website, just as if you opened it in a tab, and that website's own privacy policy applies.</li>
+</ul>
+
+<h2>Website permissions</h2>
+<p>To show a website inside the feed, Cairn removes the headers that forbid embedding (<code>X-Frame-Options</code> and <code>Content-Security-Policy</code>), but only for pages embedded in Cairn's own page. Pages you open normally are not changed. Cairn's scripts on web pages look at the page's structure to decide whether it is an article, and pass only the page title and address, scroll position, that verdict and Cairn's own shortcut keys to the feed in the same browser. They do not read form fields or passwords, and nothing they see leaves your device.</p>
+
+<h2>What Cairn does not do</h2>
+<ul>
+  <li>No analytics, tracking, advertising or third-party SDKs.</li>
+  <li>No selling or sharing of user data.</li>
+  <li>No collection of personal or sensitive information.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Questions or requests: <a href="https://github.com/jccjd/webflow-index/issues">open an issue</a>.</p>
+
+<hr>
+
+<h1 id="zh">Cairn 叠石 隐私政策</h1>
+<p class="meta">最后更新：2026-11-04</p>
+
+<p>叠石是一个把网页变成上下滑信息流的浏览器插件。它没有账号，也没有接收你数据的服务器。它对你的了解都只存在你的浏览器里。</p>
+
+<h2>只存在本机的</h2>
+<ul>
+  <li><b>书签：</b>读取浏览器书签放进信息流，不上传。</li>
+  <li><b>你的反应：</b>喜欢、不感兴趣、每页停留时长和滚动深度、阅读位置，以及由此算出的口味，都存在本机的 <code>chrome.storage</code> 里，只用于在本机排序。</li>
+  <li><b>你添加的网址：</b>存在本机。</li>
+</ul>
+<p>卸载插件就会删除这些数据。</p>
+
+<h2>插件会下载的</h2>
+<ul>
+  <li><b>公开内容索引</b>（<code>jccjd.github.io/webflow-index</code>）：列出文章标题、链接和摘要的静态文件。所有人下载的都是同样的文件，不发送任何个人信息或喜好，不带 Cookie。GitHub Pages 和任何网站一样，访问日志里能看到你的 IP 地址。</li>
+  <li><b>公开来源</b>：博客订阅源、Hacker News 搜索、维基百科等，不带 Cookie 直接访问这些网站，用来找新文章。书签里的网页也可能这样访问一次，判断它是不是文章。内网、工作文档和后台系统的地址不访问。</li>
+  <li><b>你看的网页</b>：流里每一页都从它自己的网站加载，和在标签页里打开一样，适用那个网站自己的隐私政策。</li>
+</ul>
+
+<h2>网站权限</h2>
+<p>为了把网站显示在流里，叠石会去掉禁止嵌入的响应头（<code>X-Frame-Options</code> 和 <code>Content-Security-Policy</code>），只对嵌在叠石页面里的网页这样做，你正常打开的网页不受影响。插件在网页里的脚本会看网页结构，判断它是不是文章，只把标题和网址、滚动位置、判断结果和叠石自己的快捷键传给同一浏览器里的信息流。它们不读取表单和密码，看到的东西都不离开你的电脑。</p>
+
+<h2>不做的事</h2>
+<ul>
+  <li>没有统计、追踪、广告，也不接入任何第三方 SDK。</li>
+  <li>不出售、不分享用户数据。</li>
+  <li>不收集个人信息或敏感信息。</li>
+</ul>
+
+<h2>联系</h2>
+<p>有问题或要求，请<a href="https://github.com/jccjd/webflow-index/issues">提 issue</a>。</p>
+</main>
+</body>
+</html>
