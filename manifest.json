@@ -1,0 +1,27 @@
+{
+  "v": 1,
+  "generated_at": "2026-11-28T02:05:11.060Z",
+  "shards": {
+    "zh": {
+      "count": 106,
+      "items": 47559
+    },
+    "en": {
+      "count": 1508,
+      "items": 678252
+    }
+  },
+  "latest": {
+    "zh": {
+      "items": 373
+    },
+    "en": {
+      "items": 600
+    }
+  },
+  "vec": {
+    "model": "multilingual-e5-small",
+    "dims": 384,
+    "bits": 4
+  }
+}
